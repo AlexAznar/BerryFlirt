@@ -1,0 +1,7 @@
+api_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: ApiBundle:Default:index }
+ 
+user:
+    type: rest
+    resource: BlueFlirt\ApiBundle\Controller\UserController

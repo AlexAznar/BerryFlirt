@@ -1,0 +1,58 @@
+BlueFlirt\ApiBundle\Entity\User:
+    type: entity
+    table: user
+    fields:
+        id:
+            id: true
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        mac:
+            type: string
+            length: 17
+            fixed: false
+            nullable: false
+        nickname:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+        comment:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        age:
+            type: smallint
+            nullable: false
+        email:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        avatar:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        verifyCode:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: verify_code
+        active:
+            type: boolean
+            nullable: false
+        createdAt:
+            type: datetime
+            nullable: false
+            column: created_at
+        updatedAt:
+            type: datetime
+            nullable: false
+            column: updated_at
+    lifecycleCallbacks: {  }
